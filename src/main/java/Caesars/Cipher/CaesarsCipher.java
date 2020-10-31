@@ -5,12 +5,16 @@ public class CaesarsCipher {
 	private static final char LETTER_A = 'a';
 	private static final char LETTER_Z = 'z';
 	private static final int ALPHABET_SIZE = 26;
+	protected static String em = "";
+	protected static String message = "";
 	
 	public String cipher(String message, int offset) {
+		this.message = message;
 		offset %= ALPHABET_SIZE;
 		char[] character = message.toCharArray(); // converts String message into a char array
-		offSetBy(character, offset); 
-		return new String(character); // returns ciphered message
+		offSetBy(character, offset);
+		em = new String(character); 
+		return em;// returns ciphered message
 	} // end of cipher
 
     // Goes through each character of the messaged array to offset, ignores spaces
@@ -37,4 +41,14 @@ public class CaesarsCipher {
 		return c;
 		
 	} // end of offSetChar
+	
+	protected String getEncryptedMessage() {
+		return em;
+	} // end getEncryptedMessage
+	
+	protected String getMessage() {
+		return message;
+	}
+
+	
 } // end of class
