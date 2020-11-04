@@ -23,7 +23,7 @@ class CaesarCipherTest {
 	
 	@Test
 	void testCipheredMessageWith() {
-		assertEquals( "k ycpv uqog rkbbc", cc.cipher("i want some pizza", 54));
+		assertEquals( "? Zedwj adem m^e je ^Wd]ekj m_j^ jeZWoq", cc.cipher("I don't know who to hangout with today!", 80));
 	}
 	
 	@Test

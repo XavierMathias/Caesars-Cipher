@@ -7,10 +7,8 @@ public class Main {
 	
 	public static final Scanner input = new Scanner(System.in);
 	public static final SecureRandom sr = new SecureRandom();
-
+	public static final CaesarsCipher cc = new CaesarsCipher(); // instantiate object
 	public static void main(String[] args) {
-		
-		CaesarsCipher cc = new CaesarsCipher(); // instantiate object
 		
 		System.out.println("Enter the message that you want to encrypt: ");
 		String message = input.nextLine();
